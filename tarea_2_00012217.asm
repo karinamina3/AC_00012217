@@ -30,16 +30,32 @@ section .data
 
 eje:    INC bx
         MUL cx
-        MOV [210h + bx], ax
+        MOV [210h+bx], ax
         CMP ax, 0XFF
         JB eje
 
 eje2:   INC bx
-        INC bx
         MUL cx
-        MOV [210h + bx], ax
+        MOV [210h+bx], ax
         CMP bx, 12d
         JBE eje2
+
+
+; -- Ejercicio 3: Sucesión de Fibonacci
+
+        MOV dl, 0d
+        MOV [220h], dl
+        MOV dl, 1d
+        MOV [221h], dl
+        MOV bx, 1d
+
+eje3:   INC bx
+        MOV ax, [220h+bx-1]
+        MOV cx, [220h+bx-2]
+        ADD ax, cx
+        MOV [220h+bx], ax
+        CMP bx, 14d
+        JB eje3
 
 
         int 20h
