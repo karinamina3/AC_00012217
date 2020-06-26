@@ -46,62 +46,62 @@ section .text
 	mov	si, 25d
 	mov 	di, 115d
 	mov	bp, 175d
-	call 	linea_v
+	call 	linea_v		; linea 1
 
 	mov	si, 25d
 	mov 	di, 115d
 	mov	bp, 65d
-	call 	linea_h
+	call 	linea_h		; linea 2
 
 	mov	si, 25d
 	mov 	di, 175d
 	mov	bp, 65d
-	call 	linea_h
+	call 	linea_h		; linea 3
 
 	mov	si, 65d
 	mov 	di, 175d
 	mov	bp, 180d
-	call 	linea_v
+	call 	linea_v		; linea 4
 
 	mov	si, 65d
 	mov 	di, 180d
 	mov	bp, 85d
-	call 	linea_h
+	call 	linea_h		; linea 5
 
 	mov	si, 85d
 	mov 	di, 25d
 	mov	bp, 180d
-	call 	linea_v
+	call 	linea_v		; linea 6
 
 	mov	si, 65d
 	mov 	di, 25d
 	mov	bp, 85d
-	call 	linea_h
+	call 	linea_h		; linea 7
 
 	mov	si, 65d
 	mov 	di, 25d
 	mov	bp, 115d
-	call 	linea_v
+	call 	linea_v		; linea 8
 
 	mov	si, 45d
 	mov 	di, 135d
 	mov	bp, 65d
-	call 	linea_h
+	call 	linea_h		; linea 9
 
 	mov	si, 45d
 	mov 	di, 135d
 	mov	bp, 155d
-	call 	linea_v
+	call 	linea_v		; linea 10
 
 	mov	si, 45d
 	mov 	di, 155d
 	mov	bp, 65d
-	call 	linea_h
+	call 	linea_h		; linea 11
 
 	mov	si, 65d
 	mov 	di, 135d
 	mov	bp, 155d
-	call 	linea_v
+	call 	linea_v		; linea 12
 
 
 	; Detener ejecución
