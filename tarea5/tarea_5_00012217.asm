@@ -1,4 +1,4 @@
-        org 	100h
+	org 	100h
 
 section .text
 	call 	grafico
@@ -6,41 +6,102 @@ section .text
 	xor 	si, si
 	xor 	di, di
 
+	; Letra K
+	; mov 	si, 25d
+	; mov 	di, 25d
+	; mov	bp, 45d
+	; call 	linea_h
 
-	mov 	si, 25d
-	mov 	di, 25d
-	mov	bp, 45d
-	call 	linea_h
+	; mov	si, 25d
+	; mov 	di, 25d
+	; mov	bp, 175d
+	; call 	linea_v
 
+	; mov 	si, 25d
+	; mov 	di, 175d
+	; mov	bp, 45d
+	; call 	linea_h
+
+	; mov	si, 45d
+	; mov 	di, 25d
+	; mov	bp, 85d
+	; call 	linea_v
+
+	; mov	si, 45d
+	; mov 	di, 115d
+	; mov	bp, 175d
+	; call 	linea_v
+
+	; mov 	si, 105d
+	; mov 	di, 25d
+	; mov	bp, 125d
+	; call 	linea_h
+
+	; mov 	si, 105d
+	; mov 	di, 175d
+	; mov	bp, 125d
+	; call 	linea_h
+
+	; Letra d
 	mov	si, 25d
-	mov 	di, 25d
-	mov	bp, 175d
-	call 	linea_v
-
-	mov 	si, 25d
-	mov 	di, 175d
-	mov	bp, 45d
-	call 	linea_h
-
-	mov	si, 45d
-	mov 	di, 25d
-	mov	bp, 85d
-	call 	linea_v
-
-	mov	si, 45d
 	mov 	di, 115d
 	mov	bp, 175d
 	call 	linea_v
 
-	mov 	si, 105d
-	mov 	di, 25d
-	mov	bp, 125d
+	mov	si, 25d
+	mov 	di, 115d
+	mov	bp, 65d
 	call 	linea_h
 
-	mov 	si, 105d
+	mov	si, 25d
 	mov 	di, 175d
-	mov	bp, 125d
+	mov	bp, 65d
 	call 	linea_h
+
+	mov	si, 65d
+	mov 	di, 175d
+	mov	bp, 180d
+	call 	linea_v
+
+	mov	si, 65d
+	mov 	di, 180d
+	mov	bp, 85d
+	call 	linea_h
+
+	mov	si, 85d
+	mov 	di, 25d
+	mov	bp, 180d
+	call 	linea_v
+
+	mov	si, 65d
+	mov 	di, 25d
+	mov	bp, 85d
+	call 	linea_h
+
+	mov	si, 65d
+	mov 	di, 25d
+	mov	bp, 115d
+	call 	linea_v
+
+	mov	si, 45d
+	mov 	di, 135d
+	mov	bp, 65d
+	call 	linea_h
+
+	mov	si, 45d
+	mov 	di, 135d
+	mov	bp, 155d
+	call 	linea_v
+
+	mov	si, 45d
+	mov 	di, 155d
+	mov	bp, 65d
+	call 	linea_h
+
+	mov	si, 65d
+	mov 	di, 135d
+	mov	bp, 155d
+	call 	linea_v
 
 
 	; Detener ejecución
